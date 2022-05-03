@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface ExamplePlugin {\n  echo(options: { plist: string, key: string }): Promise<{ plist: string, key: string, value: string }>;\n}\n"]}

@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "ExamplePlugin",
+    "slug": "exampleplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { plist: string; key: string; }) => Promise<{ plist: string; key: string; value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ plist: string; key: string; }"
+          }
+        ],
+        "returns": "Promise<{ plist: string; key: string; value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

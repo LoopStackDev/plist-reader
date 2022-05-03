@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LoopStackDev/farmaloop-pwa.git"
+    "url": "git+https://github.com/LoopStackDev/plist-reader.git"
   },
   "bugs": {
-    "url": "https://github.com/LoopStackDev/farmaloop-pwa/issues"
+    "url": "https://github.com/LoopStackDev/plist-reader/issues"
   },
   "keywords": [
     "capacitor",
