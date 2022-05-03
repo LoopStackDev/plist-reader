@@ -13,10 +13,17 @@ public class ExamplePlugin extends Plugin {
 
     @PluginMethod
     public void echo(PluginCall call) {
-        String value = call.getString("value");
+        String key = call.getString("key");
+
+        final Activity activity = getActivity();
+
+        String packageName = activity.getPackageName();
+
+        int resId = activity.getResources().getIdentifier(key, "string", packageName);
+        String value = activity.getString(resId);
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+        ret.put("value", value);
+        call.success(ret);
     }
 }
