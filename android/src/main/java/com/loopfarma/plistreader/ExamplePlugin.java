@@ -1,4 +1,4 @@
-package com.loopfarmaplugins.plistreader;
+package com.loopfarma.plistreader;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;

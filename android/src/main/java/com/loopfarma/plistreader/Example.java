@@ -1,4 +1,4 @@
-package com.loopfarmaplugins.plistreader;
+package com.loopfarma.plistreader;
 
 import android.util.Log;
 
