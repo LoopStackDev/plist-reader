@@ -15,8 +15,8 @@ public class ExamplePlugin extends Plugin {
     public void echo(PluginCall call) {
         String key = call.getString("key");
 
-        int resId = getResources().getIdentifier(key, "string", getPackageName());
-        String value = getString(resId);
+        int resId = this.getContext().getResources().getIdentifier(key, "string", this.getContext().getPackageName());
+        String value = this.getContext().getString(resId);
 
         JSObject ret = new JSObject();
         ret.put("value", value);
