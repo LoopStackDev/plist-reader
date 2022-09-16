@@ -9,6 +9,11 @@ import Capacitor
 public class ExamplePlugin: CAPPlugin {
     private let implementation = Example()
 
+    @objc override public func load() {
+        // Called when the plugin is first constructed in the bridge
+        self.bridge?.webView?.scrollView.bounces = false
+    }
+
     @objc func echo(_ call: CAPPluginCall) {
         let plist = call.getString("plist") ?? ""
         let key = call.getString("key") ?? ""
