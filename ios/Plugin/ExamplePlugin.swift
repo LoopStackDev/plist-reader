@@ -13,6 +13,8 @@ public class ExamplePlugin: CAPPlugin {
         // Called when the plugin is first constructed in the bridge
         self.bridge?.webView?.scrollView.bounces = false
         self.bridge?.webView?.scrollView.alwaysBounceVertical = false
+        self.bridge?.webView?.scrollView.showsVerticalScrollIndicator = false
+        self.bridge?.webView?.scrollView.showsHorizontalScrollIndicator = false
     }
 
     @objc func echo(_ call: CAPPluginCall) {
