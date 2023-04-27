@@ -19,7 +19,7 @@ apply plugin: 'com.android.library'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.plistreader.lib'
+        namespace 'com.loopfarma.plistreader'
     }
     
     compileSdkVersion project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 30
